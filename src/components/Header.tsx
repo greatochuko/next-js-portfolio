@@ -12,7 +12,7 @@ export default function Header() {
       <h1 className="text-xl font-semibold text-zinc-700">
         Great<span className="text-blue-500">folio</span>
       </h1>
-      <ul className="flex gap-2 max-w-2xl justify-evenly text-zinc-500 font-semibold flex-1">
+      <ul className="lg:flex hidden gap-2 max-w-2xl justify-evenly text-zinc-500 font-semibold flex-1">
         <li>
           <Link
             href={"/"}
@@ -210,7 +210,7 @@ export default function Header() {
       </ul>
       <Link
         href={"/contact"}
-        className="flex-center gap-2 whitespace-nowrap py-3 px-7 bg-zinc-800/90 hover:bg-zinc-900 duration-300 text-white rounded-lg"
+        className="lg:flex-center hidden gap-2 whitespace-nowrap py-3 px-7 bg-zinc-800/90 hover:bg-zinc-900 duration-300 text-white rounded-lg"
       >
         Let's Talk
         <svg
@@ -233,6 +233,45 @@ export default function Header() {
           </g>
         </svg>
       </Link>
+      <button className="lg:hidden">
+        <svg
+          viewBox="0 0 24 24"
+          width={40}
+          height={35}
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M5 7H19"
+              stroke="#000000"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+            <path
+              d="M5 12L19 12"
+              stroke="#000000"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+            <path
+              d="M5 17L19 17"
+              stroke="#000000"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </button>
     </div>
   );
 }
