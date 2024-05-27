@@ -19,7 +19,7 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          " bg-gradient-radial min-h-[2000px] bg-no-repeat from-purple-800/20 to-white"
+          " bg-gradient-radial min-h-screen bg-no-repeat from-blue-600/20 to-white"
         }
       >
         <Header />
