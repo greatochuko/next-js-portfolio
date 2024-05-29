@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function AboutBlock() {
   return (
-    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-80 p-5 row-span-2 flex flex-col gap-8">
-      <div className="h-[50%] rounded-md bg-zinc-100">
+    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-5 row-span-2 flex flex-col gap-8">
+      <div className="w-full aspect-video xl:aspect-[1.2] rounded-md bg-zinc-100">
         <div className="w-full relative h-full">
           <Image
             src={"/profilePic-transparent.png"}

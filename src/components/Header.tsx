@@ -6,7 +6,6 @@ import React from "react";
 
 export default function Header() {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <div className="bg-white shadow-[0_1px_5px_0px] sticky top-0 flex items-center justify-between p-2.5 gap-4 shadow-zinc-300 rounded-xl w-[90%] max-w-7xl mx-auto mt-5 z-10">
       <h1 className="text-xl font-semibold text-zinc-700">
@@ -210,7 +209,7 @@ export default function Header() {
       </ul>
       <Link
         href={"/contact"}
-        className="py-4 px-8 flex-center gap-2 bg-zinc-800/90 hover:bg-zinc-900 duration-300 text-white rounded-lg"
+        className="py-4 px-8 hidden lg:flex-center gap-2 bg-zinc-800/90 hover:bg-zinc-900 duration-300 text-white rounded-lg"
       >
         Let's Talk
         <svg
