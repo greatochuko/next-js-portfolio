@@ -23,11 +23,11 @@ export default function RootLayout({
       <body
         className={
           openSans.className +
-          " bg-gradient-radial bg-no-repeat from-purple-800/20 to-white"
+          " bg-gradient-radial bg-no-repeat from-purple-800/20 to-white flex flex-col min-h-screen"
         }
       >
         <Header />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
         <footer className="mx-auto w-fit my-6 text-sm font-semibold text-zinc-500">
           &copy; {new Date().getFullYear()}, Great Ogheneochuko
         </footer>
