@@ -205,7 +205,7 @@ export default function MobileNav({
 
         <ul className="flex flex-col gap-3">
           {navLinks.map((link) => (
-            <li>
+            <li key={link.name}>
               <Link
                 href={link.href}
                 className={`${
