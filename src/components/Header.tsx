@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="bg-white shadow-[0_1px_5px_0px] sticky top-0 flex items-center justify-between p-2.5 gap-4 shadow-zinc-300 rounded-xl w-[90%] max-w-7xl mx-auto mt-6 z-10">
+      <div className="bg-white shadow-[0_1px_5px_0px] sticky top-0 flex items-center justify-between p-2.5 gap-4 shadow-zinc-300 rounded-xl w-[90%] max-w-4xl lg:max-w-7xl mx-auto mt-6 z-10">
         <h1 className="text-2xl font-semibold text-zinc-700">
           Great<span className="text-blue-500">Folio</span>
         </h1>

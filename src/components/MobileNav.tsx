@@ -209,7 +209,9 @@ export default function MobileNav({
               <Link
                 href={link.href}
                 className={`${
-                  pathname === link.href ? "bg-zinc-100 text-zinc-800 " : ""
+                  pathname === link.href
+                    ? "bg-zinc-100 text-zinc-800 "
+                    : "text-zinc-700"
                 } py-3 flex items-center gap-2 hover:bg-zinc-100 rounded-md hover:text-zinc-800 group duration-300`}
               >
                 {link.icon}
