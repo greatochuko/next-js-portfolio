@@ -2,9 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function AboutBlock() {
+export default function AboutBlock({ sticky }: { sticky?: boolean }) {
   return (
-    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-6 row-span-2 flex flex-col gap-8">
+    <div
+      className={`bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-6 row-span-2 flex flex-col gap-8 ${
+        sticky ? "sticky top-24 h-fit" : ""
+      }`}
+    >
       <div className="w-full aspect-video lg:aspect-[1.2] rounded-md bg-zinc-100">
         <div className="w-full relative h-full">
           <Image
