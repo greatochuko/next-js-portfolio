@@ -5,8 +5,8 @@ import React from "react";
 
 export default function ContactPage() {
   return (
-    <div className="mt-6 w-[90%] max-w-4xl lg:max-w-7xl mx-auto ">
-      <div className="flex gap-6">
+    <div className="mt-6 w-[90%] max-w-4xl lg:max-w-7xl mx-auto">
+      <div className="flex gap-6 lg:flex-row flex-col">
         <AboutBlock sticky />
         <div className="bg-white p-4 sm:p-6 rounded-lg shadow-[0_1px_5px_0px] shadow-zinc-300">
           <div className="flex flex-col gap-2 sm:gap-4 md:gap-6 mb-8">
@@ -19,32 +19,34 @@ export default function ContactPage() {
               elevate your business to the next level.
             </p>
           </div>
-          <form className="grid grid-cols-2 gap-6 p-6 bg-zinc-100 text-zinc-700">
-            <div className="flex flex-col gap-2">
-              <label htmlFor="name" className="font-semibold">
-                Name
-              </label>
-              <input
-                name="name"
-                type="text"
-                id="name"
-                placeholder="Enter your name"
-                className="p-4 border rounded-lg focus:ring ring-blue-400"
-              />
+          <form className="flex flex-col gap-4 md:gap-6 p-4 md:p-6 bg-zinc-100 text-zinc-700">
+            <div className="flex flex-col md:flex-row gap-6 items-center">
+              <div className="flex flex-col gap-2 flex-1 w-full">
+                <label htmlFor="name" className="font-semibold">
+                  Name
+                </label>
+                <input
+                  name="name"
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                  className="p-3 md:p-4 border rounded-md md:rounded-lg focus:ring ring-blue-400"
+                />
+              </div>
+              <div className="flex flex-col gap-2 flex-1 w-full">
+                <label htmlFor="email" className="font-semibold">
+                  Email
+                </label>
+                <input
+                  name="emil"
+                  type="email"
+                  id="email"
+                  placeholder="Enter your Email"
+                  className="p-3 md:p-4 border rounded-md md:rounded-lg focus:ring ring-blue-400"
+                />
+              </div>
             </div>
             <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="font-semibold">
-                Email
-              </label>
-              <input
-                name="emil"
-                type="email"
-                id="email"
-                placeholder="Enter your name"
-                className="p-4 border rounded-lg focus:ring ring-blue-400"
-              />
-            </div>
-            <div className="flex flex-col gap-2 col-span-2">
               <label htmlFor="subject" className="font-semibold">
                 Subject
               </label>
@@ -52,8 +54,8 @@ export default function ContactPage() {
                 name="subject"
                 type="text"
                 id="subject"
-                placeholder="Enter your name"
-                className="p-4 border rounded-lg focus:ring ring-blue-400 w-[calc(50%-12px)]"
+                placeholder="Subject"
+                className="p-3 md:p-4 border rounded-md md:rounded-lg focus:ring ring-blue-400"
               />
             </div>
 
@@ -64,12 +66,13 @@ export default function ContactPage() {
               <textarea
                 name="message"
                 id="message"
-                className="resize-none aspect-[2.5] p-4 border rounded-lg focus:ring ring-blue-400"
+                placeholder="Type details about your enquiry"
+                className="resize-none aspect-video md:aspect-[2.5] p-4 border rounded-md md:rounded-lg focus:ring ring-blue-400"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="col-span-2 bg-blue-500 text-white rounded-lg p-4 disabled:bg-zinc-500 hover:bg-blue-600/90 active:bg-blue-600 duration-300 focus-visible:ring ring-blue-400"
+              className="col-span-2 font-semibold bg-blue-500 text-white rounded-md md:rounded-lg p-3 md:p-4 disabled:bg-zinc-500 hover:bg-blue-600/90 active:bg-blue-600 duration-300 focus-visible:ring ring-blue-400"
             >
               Send Message
             </button>
