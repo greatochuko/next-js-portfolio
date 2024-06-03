@@ -213,7 +213,7 @@ export default function Header() {
         </ul>
         <Link
           href={"/contact"}
-          className="py-4 px-8 hidden lg:flex-center gap-2 bg-zinc-800/90 hover:bg-zinc-900 duration-300 text-white rounded-lg"
+          className="py-[14px] px-8 hidden lg:flex-center gap-2 bg-zinc-800/90 hover:bg-zinc-900 duration-300 text-white rounded-lg"
         >
           Let's Talk
           <svg
