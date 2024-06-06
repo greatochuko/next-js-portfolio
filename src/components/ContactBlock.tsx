@@ -8,7 +8,7 @@ export default function ContactBlock() {
         Available for hire 🚀
       </p>
       <p className="text-[2.5rem] leading-[3rem] font-semibold text-zinc-700">
-        Let's 👋
+        Let&apos;s 👋
         <br />
         Work <span className="text-blue-500">Together</span>
       </p>
@@ -16,7 +16,7 @@ export default function ContactBlock() {
         href={"/contact"}
         className="text-blue-400 focus-visible:ring ring-blue-400 border-b w-fit hover:border-blue-500 hover:text-blue-500 duration-300 flex gap-2 items-center"
       >
-        Let's Talk
+        Let&apos;s Talk
         <svg
           fill="#fff"
           viewBox="0 0 256 256"

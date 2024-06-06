@@ -1,6 +1,6 @@
 import React from "react";
 import BlogList from "@/components/BlogList";
-import getBlogposts from "@/utils/services";
+import {getBlogposts} from "@/utils/services";
 import Paginator from "@/components/Paginator";
 
 export const revalidate = 30;

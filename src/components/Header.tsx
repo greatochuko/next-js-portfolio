@@ -218,7 +218,7 @@ export default function Header() {
           href={"/contact"}
           className="py-[14px] px-8 hidden lg:flex-center gap-2 bg-zinc-800/90 hover:bg-zinc-900 duration-300 text-white rounded-lg"
         >
-          Let's Talk
+          Let&apos;s Talk
           <svg
             fill="#fff"
             viewBox="0 0 256 256"

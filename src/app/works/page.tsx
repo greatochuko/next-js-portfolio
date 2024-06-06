@@ -38,7 +38,7 @@ export default function WorksPage() {
           Check Out My Latest <span className="text-blue-500">Projects</span>
         </h2>
         <p className="text-sm sm:text-base md:text-lg text-zinc-500 font-[500]">
-          I'm here to help if you're looking for a fullstack web / mobile
+          I&apos;m here to help if you&apos;re looking for a fullstack web / mobile
           developer to bring your idea to life or a development partner to
           elevate your business to the next level.
         </p>

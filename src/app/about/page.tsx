@@ -34,12 +34,12 @@ export default function page() {
               <br />
               <br />
               Currently, I am expanding my skill set to include Python, Django,
-              and SQL to enhance my backend capabilities. Additionally, I'm
+              and SQL to enhance my backend capabilities. Additionally, I&apos;m
               exploring React Native and Flutter to venture into mobile
               development.
               <br />
               <br />I am always eager to learn new technologies and take on
-              challenging projects. Let's{" "}
+              challenging projects. Let&apos;s{" "}
               <span className="text-blue-500">connect and build </span>{" "}
               something amazing together!
             </p>

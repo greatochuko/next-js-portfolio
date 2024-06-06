@@ -53,7 +53,7 @@ export default function MobileNav({
           href={"/contact"}
           className="py-4 px-8 flex-center gap-2 bg-zinc-800/90 hover:bg-zinc-900 duration-300 text-white rounded-lg mt-auto"
         >
-          Let's Talk
+          Let&apos;s Talk
           <svg
             fill="#fff"
             viewBox="0 0 256 256"

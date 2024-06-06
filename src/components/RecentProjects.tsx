@@ -18,6 +18,7 @@ export default async function RecentProjects() {
 
       {projects.map((project) => (
         <Link
+        key={project.name}
           href={project.linkAddress}
           className="bg-zinc-100 focus-visible:ring ring-blue-400 p-6 pb-0 relative flex-1 group rounded-lg overflow-hidden group"
         >
