@@ -5,8 +5,6 @@ import Link from "next/link";
 import React from "react";
 
 export default function page() {
-  console.clear();
-  console.log(Date.now());
   return (
     <div className="mt-6 w-[90%] max-w-4xl lg:max-w-7xl mx-auto">
       <div className="flex gap-6 lg:flex-row flex-col">
