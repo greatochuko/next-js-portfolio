@@ -179,7 +179,7 @@ export default function AboutBlock({ sticky }: { sticky?: boolean }) {
       </div>
 
       <div className="flex gap-2">
-        <button className="flex-center gap-2 bg-blue-500 flex-1 py-4 text-sm sm:text-base sm:flex-none sm:px-8 lg:px-0 lg:flex-1 rounded-md text-white font-semibold hover:bg-blue-600/95 active:bg-blue-600 duration-300">
+        <button className="focus-visible:ring ring-blue-400 flex-center gap-2 bg-blue-500 flex-1 py-4 text-sm sm:text-base sm:flex-none sm:px-8 lg:px-0 lg:flex-1 rounded-md text-white font-semibold hover:bg-blue-600/95 active:bg-blue-600 duration-300">
           <svg
             fill="#fff"
             viewBox="0 0 846.66 846.66"
@@ -208,7 +208,7 @@ export default function AboutBlock({ sticky }: { sticky?: boolean }) {
           </svg>
           View Resume
         </button>
-        <button className="flex-center gap-2 flex-1 py-4 text-sm sm:text-base sm:flex-none sm:px-8 lg:px-0 lg:flex-1 rounded-md border font-semibold text-zinc-800 border-zinc-200 hover:bg-zinc-200 active:bg-zinc-300 hover:border-zinc-300 duration-300">
+        <button className="focus-visible:ring ring-blue-400 flex-center gap-2 flex-1 py-4 text-sm sm:text-base sm:flex-none sm:px-8 lg:px-0 lg:flex-1 rounded-md border font-semibold text-zinc-800 border-zinc-200 hover:bg-zinc-200 active:bg-zinc-300 hover:border-zinc-300 duration-300">
           <svg
             viewBox="0 0 24 24"
             height={20}
