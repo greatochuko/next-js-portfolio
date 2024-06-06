@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-type Article = {
+export type Blogpost = {
   id: number;
   title: string;
   imageUrl: string;
@@ -13,7 +13,7 @@ type Article = {
   dateUpdated: string;
 };
 
-export default function BlogList({ blogposts }: { blogposts: Article[] }) {
+export default function BlogList({ blogposts }: { blogposts: Blogpost[] }) {
   const searchParams = useSearchParams();
 
   const activePage = Number(searchParams.get("page")) || 1;

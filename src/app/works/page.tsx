@@ -21,6 +21,15 @@ const projects = [
   },
 ];
 
+export type Project = {
+  name: string;
+  subtitle: string;
+  linkAddress: string;
+  webAddress: string;
+  imageUrl: string;
+  category: string;
+};
+
 export default function WorksPage() {
   return (
     <div className="mt-6 w-[90%] max-w-4xl lg:max-w-7xl mx-auto bg-white p-4 sm:p-6">
