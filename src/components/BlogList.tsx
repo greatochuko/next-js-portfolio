@@ -2,12 +2,29 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import articles from "@/data/articles.json";
+import { useSearchParams } from "next/navigation";
 
-export default function BlogList() {
+type Article = {
+  id: number;
+  title: string;
+  imageUrl: string;
+  href: string;
+  readTime: string;
+  dateUpdated: string;
+};
+
+export default function BlogList({ blogposts }: { blogposts: Article[] }) {
+  const searchParams = useSearchParams();
+
+  const activePage = Number(searchParams.get("page")) || 1;
+  const filteredBlogposts = blogposts.slice(
+    (activePage - 1) * 6,
+    activePage * 6
+  );
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {articles.map((article) => (
+      {filteredBlogposts.map((article) => (
         <Link
           href={article.href}
           className="aspect-[1.2] flex flex-col gap-2 group"
