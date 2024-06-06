@@ -14,7 +14,7 @@ export default function ContactBlock() {
       </p>
       <Link
         href={"/contact"}
-        className="text-blue-400 border-b w-fit hover:border-blue-500 hover:text-blue-500 duration-300 flex gap-2 items-center"
+        className="text-blue-400 focus-visible:ring ring-blue-400 border-b w-fit hover:border-blue-500 hover:text-blue-500 duration-300 flex gap-2 items-center"
       >
         Let's Talk
         <svg
