@@ -201,7 +201,7 @@ export default function Header() {
         </h1>
         <ul className="lg:flex hidden gap-2 max-w-2xl justify-evenly text-zinc-500 font-semibold flex-1">
           {navLinks.map((navLink) => (
-            <li>
+            <li key={navLink.title}>
               <Link
                 href={navLink.href}
                 className={`${
