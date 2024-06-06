@@ -152,12 +152,18 @@ const socialLinks = [
   },
 ];
 
-export default function AboutBlock({ sticky }: { sticky?: boolean }) {
+export default function AboutBlock({
+  sticky,
+  side,
+}: {
+  sticky?: boolean;
+  side?: boolean;
+}) {
   return (
     <div
-      className={`bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-6 row-span-2 flex flex-col gap-8 ${
+      className={`bg-white rounded-xl shadow-[0_1px_5px_0px]  shadow-zinc-300 min-h-72 p-6 row-span-2 flex flex-col gap-8 ${
         sticky ? "block top-24 h-fit lg:sticky" : ""
-      }`}
+      }${side ? " lg:max-w-[410px]" : ""}`}
     >
       <div className="w-full aspect-video lg:aspect-[1.2] rounded-md bg-zinc-100">
         <div className="w-full relative h-full">
@@ -173,7 +179,9 @@ export default function AboutBlock({ sticky }: { sticky?: boolean }) {
       <div className="flex gap-2 flex-col text-zinc-800">
         <h2 className="text-2xl font-semibold">Great Ogheneochuko 👋</h2>
         <p>
-          A Passionate <strong>Full Stack Developer</strong> 🖥️ having a ton of
+          A Passionate <strong>Full Stack Developer</strong> 🖥️ Fullstack Web
+          Developer with 1+ year of experience in JavaScript, React, Next.js,
+          MongoDB, Express, Tailwind, and TypeScript. having a ton of
           Experiences with <strong>4+ projects built</strong>.
         </p>
       </div>
