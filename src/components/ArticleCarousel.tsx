@@ -2,41 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-
-const articles = [
-  {
-    id: 1,
-    title: "Getting started with Next JS 1",
-    imageUrl: "/getting-started-with-nextjs.jpg",
-    href: "/blog/getting-started-with-nextjs",
-    readTime: "5 mins",
-    dateUpdated: "06/06/2024",
-  },
-  {
-    id: 2,
-    title: "Getting started with Next JS 2",
-    imageUrl: "/getting-started-with-nextjs.jpg",
-    href: "/blog/getting-started-with-nextjs",
-    readTime: "5 mins",
-    dateUpdated: "06/06/2024",
-  },
-  {
-    id: 3,
-    title: "Getting started with Next JS 3",
-    imageUrl: "/getting-started-with-nextjs.jpg",
-    href: "/blog/getting-started-with-nextjs",
-    readTime: "5 mins",
-    dateUpdated: "06/06/2024",
-  },
-  {
-    id: 4,
-    title: "Getting started with Next JS 4",
-    imageUrl: "/getting-started-with-nextjs.jpg",
-    href: "/blog/getting-started-with-nextjs",
-    readTime: "5 mins",
-    dateUpdated: "06/06/2024",
-  },
-];
+import articles from "@/data/articles.json";
 
 export default function ArticleCarousel() {
   const [num, setNum] = useState(0);
