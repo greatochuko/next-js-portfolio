@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Getting started with Next JS 1",
+    "imageUrl": "/getting-started-with-nextjs.jpg",
+    "href": "/blog/getting-started-with-nextjs",
+    "readTime": "5 mins",
+    "dateUpdated": "06/06/2024"
+  },
+  {
+    "id": 2,
+    "title": "Getting started with Next JS 2",
+    "imageUrl": "/getting-started-with-nextjs.jpg",
+    "href": "/blog/getting-started-with-nextjs",
+    "readTime": "5 mins",
+    "dateUpdated": "06/06/2024"
+  },
+  {
+    "id": 3,
+    "title": "Getting started with Next JS 3",
+    "imageUrl": "/getting-started-with-nextjs.jpg",
+    "href": "/blog/getting-started-with-nextjs",
+    "readTime": "5 mins",
+    "dateUpdated": "06/06/2024"
+  },
+  {
+    "id": 4,
+    "title": "Getting started with Next JS 4",
+    "imageUrl": "/getting-started-with-nextjs.jpg",
+    "href": "/blog/getting-started-with-nextjs",
+    "readTime": "5 mins",
+    "dateUpdated": "06/06/2024"
+  },
+  {
+    "id": 5,
+    "title": "Getting started with Next JS 5",
+    "imageUrl": "/getting-started-with-nextjs.jpg",
+    "href": "/blog/getting-started-with-nextjs",
+    "readTime": "5 mins",
+    "dateUpdated": "06/06/2024"
+  },
+  {
+    "id": 6,
+    "title": "Getting started with Next JS 6",
+    "imageUrl": "/getting-started-with-nextjs.jpg",
+    "href": "/blog/getting-started-with-nextjs",
+    "readTime": "5 mins",
+    "dateUpdated": "06/06/2024"
+  },
+  {
+    "id": 7,
+    "title": "Getting started with Next JS 7",
+    "imageUrl": "/getting-started-with-nextjs.jpg",
+    "href": "/blog/getting-started-with-nextjs",
+    "readTime": "5 mins",
+    "dateUpdated": "06/06/2024"
+  },
+  {
+    "id": 8,
+    "title": "Getting started with Next JS 8",
+    "imageUrl": "/getting-started-with-nextjs.jpg",
+    "href": "/blog/getting-started-with-nextjs",
+    "readTime": "5 mins",
+    "dateUpdated": "06/06/2024"
+  }
+]
