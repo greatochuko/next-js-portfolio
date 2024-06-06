@@ -2,8 +2,10 @@ import Link from "next/link";
 import React from "react";
 import GridBlockHeader from "./GridBlockHeader";
 import Image from "next/image";
-import getBlogposts from "@/utils/services";
+import { getBlogposts } from "@/utils/services";
 import { Blogpost } from "./BlogList";
+
+export const revalidate = 3600;
 
 export default async function RecentBlog() {
   const blogposts: Blogpost[] = await getBlogposts();
@@ -14,7 +16,7 @@ export default async function RecentBlog() {
       <GridBlockHeader linkText="All Blogposts" linkAddress="/blog">
         Recent Blog
       </GridBlockHeader>
-      {/* <Link
+      <Link
         href={blogpost?.href}
         className="bg-zinc-100 focus-visible:ring ring-blue-400 aspect-video p-6 pb-0 relative flex-1 group rounded-lg overflow-hidden"
       >
@@ -28,7 +30,7 @@ export default async function RecentBlog() {
         <div className="absolute bottom-0 left-0 w-full h-[50%] p-4 flex items-end pb-3 bg-gradient-to-b from-transparent to-black/80 duration-300 text-white">
           {blogpost?.title}
         </div>
-      </Link> */}
+      </Link>
     </div>
   );
 }

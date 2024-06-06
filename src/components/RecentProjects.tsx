@@ -2,10 +2,10 @@ import Link from "next/link";
 import React from "react";
 import GridBlockHeader from "./GridBlockHeader";
 import Image from "next/image";
-import getProjects from "@/utils/services";
+import { getProjects } from "@/utils/services";
 import { Project } from "@/app/works/page";
 
-export const revalidate = 0;
+export const revalidate = 3600;
 
 export default async function RecentProjects() {
   const projects: Project[] = await getProjects();

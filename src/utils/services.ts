@@ -9,11 +9,10 @@ export async function getBlogposts() {
   }
 }
 
-export default async function getProjects() {
+export async function getProjects() {
   try {
     const res = await fetch("http://localhost:3000/api/projects");
     const data = await res.json();
-    console.log(data);
     return data;
   } catch (err) {
     const error = err as Error;
