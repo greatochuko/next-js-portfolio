@@ -3,7 +3,7 @@ import BlogList from "@/components/BlogList";
 import { getBlogposts } from "@/utils/services";
 import Paginator from "@/components/Paginator";
 
-// export const revalidate = 0;
+export const revalidate = 30;
 
 export default async function BlogPage() {
   const blogposts = await getBlogposts();
