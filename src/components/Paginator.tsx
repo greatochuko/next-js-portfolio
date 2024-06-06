@@ -1,10 +1,15 @@
 "use client";
 import { useRouter, useSearchParams } from "next/navigation";
 import React from "react";
+import blogposts from "@/data/articles.json";
 
-export default function Paginator({ pages }: { pages: number }) {
+
+export default function Paginator() {
   const searchParams = useSearchParams();
   const router = useRouter();
+
+  const pages = blogposts.length ? Math.ceil(blogposts.length / 6) : 1;
+
 
   const activePage = Number(searchParams.get("page")) || 1;
   const pageList = Array.from({ length: pages }, (_, index) => index + 1);

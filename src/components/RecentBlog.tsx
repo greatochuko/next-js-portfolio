@@ -2,13 +2,10 @@ import Link from "next/link";
 import React from "react";
 import GridBlockHeader from "./GridBlockHeader";
 import Image from "next/image";
-import { getBlogposts } from "@/utils/services";
-import { Blogpost } from "./BlogList";
+import blogposts from "@/data/articles.json";
 
-export const revalidate = 3600;
 
 export default async function RecentBlog() {
-  const blogposts: Blogpost[] = await getBlogposts();
   const blogpost = blogposts[blogposts.length - 1];
 
   return (

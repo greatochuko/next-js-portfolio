@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import blogposts from "@/data/articles.json";
+
 
 export type Blogpost = {
   id: number;
@@ -13,7 +15,7 @@ export type Blogpost = {
   dateUpdated: string;
 };
 
-export default function BlogList({ blogposts }: { blogposts: Blogpost[] }) {
+export default function BlogList() {
   const searchParams = useSearchParams();
 
   const activePage = Number(searchParams.get("page")) || 1;

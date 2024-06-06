@@ -2,13 +2,11 @@ import Link from "next/link";
 import React from "react";
 import GridBlockHeader from "./GridBlockHeader";
 import Image from "next/image";
-import { getProjects } from "@/utils/services";
-import { Project } from "@/app/works/page";
+import projects from "@/data/projects.json";
 
-export const revalidate = 3600;
 
 export default async function RecentProjects() {
-  const projects: Project[] = await getProjects();
+
 
   return (
     <div className="bg-white aspect-[4/5] lg:aspect-auto rounded-xl sm:text-lg shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-6 row-span-2 flex flex-col gap-6 lg:gap-4">
@@ -16,7 +14,7 @@ export default async function RecentProjects() {
         Recent Projects
       </GridBlockHeader>
 
-      {projects.map((project) => (
+      {projects.slice(0,2).map((project) => (
         <Link
         key={project.name}
           href={project.linkAddress}

@@ -75,13 +75,13 @@ export default function ArticleCarousel() {
       </div>
       <div className="overflow-x-hidden relative aspect-[2.5]">
         <div
-          className="flex gap-6 absolute h-full top-0 duration-300"
+          className="flex gap-6 absolute h-full top-0 right-0 duration-300"
           style={{ left: -50 * num + "%" }}
         >
           {articles.map((article) => (
             <Link
               href={article.href}
-              className="w-[50%] aspect-[1.2] flex flex-col gap-2 group"
+              className="w-[calc(50%-12px)] aspect-[1.2] flex flex-col gap-2 group"
               key={article.id}
             >
               <div className="relative flex-1 rounded-md overflow-hidden">
