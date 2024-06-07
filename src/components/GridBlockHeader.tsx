@@ -12,11 +12,13 @@ export default function GridBlockHeader({
 }) {
   return (
     <div className="flex items-center justify-between">
-      <h2 className="text-zinc-700 font-semibold text-[22px]">{children}</h2>
+      <h2 className="text-zinc-700 font-semibold text-lg sm:text-[22px]">
+        {children}
+      </h2>
       {linkAddress && (
         <Link
           href={linkAddress}
-          className="text-blue-400 text-base border-b focus-visible:ring ring-blue-400 hover:border-blue-500 hover:text-blue-500 duration-300 flex gap-2 items-center"
+          className="text-blue-400 text-sm sm:text-base border-b focus-visible:ring ring-blue-400 hover:border-blue-500 hover:text-blue-500 duration-300 flex gap-2 items-center"
         >
           {linkText}
           <svg
