@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     template: "%s - Great Ogheneochuko",
     absolute: "Great Ogheneochuko - Full stack developer",
   },
+  openGraph: { images: ["/profilePic.jpg"] },
 };
 
 export default function RootLayout({
