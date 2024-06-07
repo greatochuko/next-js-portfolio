@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     absolute: "Great Ogheneochuko - Full stack developer",
   },
   openGraph: {
-    images: ["/profilePic.jpg"],
+    images: ["https://greatochuko.vercel.app/profilePic.jpg"],
     description:
       "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development.",
   },
