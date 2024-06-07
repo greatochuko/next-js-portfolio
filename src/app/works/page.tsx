@@ -45,46 +45,47 @@ export default function WorksPage() {
                 sizes="(max-width:900px)"
               ></Image>
             </div>
-            <div className="flex flex-col gap-1 text-zinc-600">
-              <div className="flex justify-between items-start gap-2">
+            <div className="flex flex-col sm:flex-row justify-between items-start gap-6 sm:gap-2">
+              <div className="flex flex-col gap-1 text-zinc-600">
                 <Link
                   href={project.linkAddress}
                   className="text-base sm:text-lg font-semibold border-b border-b-transparent hover:border-b-blue-500 hover:text-blue-500 duration-300"
                 >
                   {project.name}-{project.subtitle}
                 </Link>
-                <Link
-                  href={project.webAddress}
-                  className="flex-center group hover:text-blue-500 p-1 duration-300 text-sm whitespace-nowrap"
+
+                <p className="text-sm text-zinc-500">{project.category}</p>
+              </div>
+              <Link
+                href={project.webAddress}
+                className="flex-center group w-full sm:w-fit bg-blue-500 rounded-md text-white p-2 hover:bg-blue-600 duration-300 text-sm whitespace-nowrap"
+              >
+                View Live
+                <svg
+                  viewBox="0 0 24 24"
+                  height={20}
+                  width={20}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  View Live
-                  <svg
-                    viewBox="0 0 24 24"
-                    height={20}
-                    width={20}
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M7 17L17 7M17 7H8M17 7V16"
+                      stroke="#000000"
+                      className="stroke-white duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                      strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path
-                        d="M7 17L17 7M17 7H8M17 7V16"
-                        stroke="#000000"
-                        className="stroke-zinc-600 group-hover:stroke-blue-500 duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      ></path>
-                    </g>
-                  </svg>
-                </Link>
-              </div>
-              <p className="text-sm text-zinc-500">{project.category}</p>
+                    ></path>
+                  </g>
+                </svg>
+              </Link>
             </div>
           </div>
         ))}
