@@ -18,7 +18,7 @@ export default function MobileNav({
 }) {
   return (
     <div
-      className={`w-full h-full fixed bg-zinc-800/50 z-20 duration-300 top-0 left-0 transition-all ${
+      className={`w-full h-full fixed bg-black/50 z-20 duration-300 top-0 left-0 transition-all ${
         isOpen ? "visible opacity-100" : "invisible opacity-0"
       } lg:hidden`}
       onClick={closeMobileNav}
