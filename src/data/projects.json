@@ -18,7 +18,7 @@
       "githubLink": "https://github.com/greatochuko/pikxr-client",
       "webAddress": "https://pikxr.onrender.com",
     "imageUrl": "/pikxr.png",
-    "images":["/pikxr.png"],
+    "images":["/pikxr.png","/pikxr.png","/pikxr.png","/pikxr.png","/pikxr.png"],
     "category": "Web Application"
   },
   {
@@ -29,7 +29,7 @@
     "githubLink": "https://github.com/web-dev-greatochuko/stories",
     "webAddress": "https://web-dev-stories.vercel.app",
     "imageUrl": "/web-dev-stories.png",
-    "images":["/web-dev-stories.png"],
+    "images":["/web-dev-stories.png","/web-dev-stories.png","/web-dev-stories.png","/web-dev-stories.png","/web-dev-stories.png"],
     "category": "Web Application"
   }
 ]

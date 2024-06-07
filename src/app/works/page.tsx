@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export type Project = {
   name: string;
   description: string;
+  overview: string;
   linkAddress: string;
   githubLink: string;
   webAddress: string;
