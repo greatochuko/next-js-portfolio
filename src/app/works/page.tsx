@@ -15,6 +15,7 @@ export type Project = {
   githubLink: string;
   webAddress: string;
   imageUrl: string;
+  images: string[];
   category: string;
 };
 
