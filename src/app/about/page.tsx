@@ -43,15 +43,15 @@ export default function page() {
               <span className="text-blue-500">connect and build </span>{" "}
               something amazing together!
             </p>
-            <div className="flex gap-6 text-zinc-700">
+            <div className="flex gap-6 text-zinc-700 mt-6">
               <div className="flex flex-col gap-2">
-                <p className="text-3xl font-bold">1+</p>
+                <p className="text-2xl sm:text-3xl font-bold">1+</p>
                 <p className="font-semibold text-zinc-600">
                   Year of Experience
                 </p>
               </div>
               <Link href="/works" className="flex flex-col gap-2 group">
-                <p className="text-3xl font-bold group-hover:text-blue-500 duration-300">
+                <p className="text-2xl sm:text-3xl font-bold group-hover:text-blue-500 duration-300">
                   3+
                 </p>
                 <p className="font-semibold text-zinc-600 group-hover:text-blue-500 duration-300">
