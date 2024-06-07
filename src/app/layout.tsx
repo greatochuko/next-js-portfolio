@@ -14,7 +14,11 @@ export const metadata: Metadata = {
     template: "%s - Great Ogheneochuko",
     absolute: "Great Ogheneochuko - Full stack developer",
   },
-  openGraph: { images: ["/profilePic.jpg"] },
+  openGraph: {
+    images: ["/profilePic.jpg"],
+    description:
+      "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development. Discover projects, skills, and insights that showcase a dedication to excellence and a commitment to pushing the boundaries of software development.",
+  },
 };
 
 export default function RootLayout({
