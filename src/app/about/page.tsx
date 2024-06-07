@@ -1,8 +1,12 @@
 import AboutBlock from "@/components/AboutBlock";
 import ArticleCarousel from "@/components/ArticleCarousel";
 import Link from "next/link";
-
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+};
 
 export default function page() {
   return (

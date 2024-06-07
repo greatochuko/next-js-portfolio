@@ -1,10 +1,13 @@
 import React, { Suspense } from "react";
 import BlogList from "@/components/BlogList";
 import Paginator from "@/components/Paginator";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Blog",
+};
 
 export default async function BlogPage() {
-
   return (
     <div className="mt-6 w-[90%] max-w-4xl lg:max-w-7xl mx-auto bg-white p-4 sm:p-6 rounded-lg">
       <div className="flex flex-col gap-2 sm:gap-4 md:gap-6 mb-8">
@@ -18,8 +21,9 @@ export default async function BlogPage() {
         </p>
       </div>
       <Suspense>
-      <BlogList/>
-      <Paginator /></Suspense>
+        <BlogList />
+        <Paginator />
+      </Suspense>
     </div>
   );
 }

@@ -10,7 +10,10 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Great Ogheneochuko - Full stack developer",
+  title: {
+    template: "%s - Great Ogheneochuko",
+    absolute: "Great Ogheneochuko - Full stack developer",
+  },
 };
 
 export default function RootLayout({

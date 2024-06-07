@@ -1,25 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Metadata } from "next";
+import projects from "@/data/projects.json";
 
-const projects = [
-  {
-    name: "Shopparel",
-    subtitle: "Social Media Website",
-    linkAddress: "/works/shopparel",
-    webAddress: "https://shopparel.vercel.app",
-    imageUrl: "/shopparel.png",
-    category: "Web Application",
-  },
-  {
-    name: "Pikxr",
-    subtitle: "Fashion E-commerce Website",
-    linkAddress: "/works/pikxr",
-    webAddress: "https://pikxr.onrender.com",
-    imageUrl: "/pikxr.png",
-    category: "Web Application",
-  },
-];
+export const metadata: Metadata = {
+  title: "Works",
+};
 
 export type Project = {
   name: string;
