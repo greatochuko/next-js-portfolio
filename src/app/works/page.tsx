@@ -10,8 +10,9 @@ export const metadata: Metadata = {
 
 export type Project = {
   name: string;
-  subtitle: string;
+  description: string;
   linkAddress: string;
+  githubLink: string;
   webAddress: string;
   imageUrl: string;
   category: string;
@@ -51,7 +52,7 @@ export default function WorksPage() {
                   href={project.linkAddress}
                   className="text-base sm:text-lg font-semibold border-b border-b-transparent hover:border-b-blue-500 hover:text-blue-500 duration-300"
                 >
-                  {project.name}-{project.subtitle}
+                  {project.name}-{project.description}
                 </Link>
 
                 <p className="text-sm text-zinc-500">{project.category}</p>

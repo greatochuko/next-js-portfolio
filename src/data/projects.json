@@ -1,26 +1,35 @@
 [
   {
     "name": "Shopparel",
-    "subtitle": "Social Media Website",
+    "description": "Fashion E-commerce Website",
+    "overview":"Shopparel is a comprehensive fashion e-commerce platform designed to provide a seamless shopping experience for users while offering robust administrative capabilities for managing products, orders, and customers. The platform features a user-friendly interface for customers to browse and purchase fashion items, alongside a powerful admin section for efficient store management.",
     "linkAddress": "/works/shopparel",
+    "githubLink": "https://github.com/greatochuko/shopparel",
     "webAddress": "https://shopparel.vercel.app",
     "imageUrl": "/shopparel.png",
+    "images":["/shopparel.png"],
     "category": "Web Application"
-  },
-  {
-    "name": "Pikxr",
-    "subtitle": "Fashion E-commerce Website",
-    "linkAddress": "/works/pikxr",
-    "webAddress": "https://pikxr.onrender.com",
+    },
+    {
+      "name": "Pikxr",
+      "description": "Social Media Website",
+      "overview":"Shopparel is a comprehensive fashion e-commerce platform designed to provide a seamless shopping experience for users while offering robust administrative capabilities for managing products, orders, and customers. The platform features a user-friendly interface for customers to browse and purchase fashion items, alongside a powerful admin section for efficient store management.",
+      "linkAddress": "/works/pikxr",
+      "githubLink": "https://github.com/greatochuko/pikxr-client",
+      "webAddress": "https://pikxr.onrender.com",
     "imageUrl": "/pikxr.png",
+    "images":["/pikxr.png"],
     "category": "Web Application"
   },
   {
     "name": "Web Dev Stories",
-    "subtitle": "Blog Website",
+    "description": "Blog Website",
+    "overview":"Shopparel is a comprehensive fashion e-commerce platform designed to provide a seamless shopping experience for users while offering robust administrative capabilities for managing products, orders, and customers. The platform features a user-friendly interface for customers to browse and purchase fashion items, alongside a powerful admin section for efficient store management.",
     "linkAddress": "/works/web-dev-stories",
+    "githubLink": "https://github.com/web-dev-greatochuko/stories",
     "webAddress": "https://web-dev-stories.vercel.app",
     "imageUrl": "/web-dev-stories.png",
+    "images":["/web-dev-stories.png"],
     "category": "Web Application"
   }
 ]

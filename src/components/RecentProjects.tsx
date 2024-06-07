@@ -15,17 +15,19 @@ export default async function RecentProjects() {
         <Link
           key={project.name}
           href={project.linkAddress}
-          className="bg-zinc-100 aspect-video focus-visible:ring ring-blue-400 p-6 pb-0 relative  group rounded-md overflow-hidden group"
+          className="rounded-md bg-zinc-100 focus-visible:ring ring-blue-400 p-2 group"
         >
-          <Image
-            src={project.imageUrl}
-            alt={project.name}
-            className="object-cover group-hover:scale-105 duration-300"
-            fill
-            sizes="(max-width:900px)"
-          ></Image>
-          <div className="absolute bottom-0 left-0 w-full h-[50%] p-4 flex items-end pb-3 bg-gradient-to-b from-transparent to-black/80 group-hover:opacity-100 duration-300 text-white ">
-            {project.name}
+          <div className="overflow-hidden rounded-md relative aspect-video">
+            <Image
+              src={project.imageUrl}
+              alt={project.name}
+              className="object-cover group-hover:scale-105 duration-300"
+              fill
+              sizes="(max-width:900px)"
+            ></Image>
+            <div className="absolute bottom-0 left-0 w-full h-[50%] p-4 flex items-end pb-3 bg-gradient-to-b from-transparent to-black/80 group-hover:opacity-100 duration-300 text-white ">
+              {project.name}
+            </div>
           </div>
         </Link>
       ))}
