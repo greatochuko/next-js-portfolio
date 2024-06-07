@@ -161,11 +161,11 @@ export default function AboutBlock({
 }) {
   return (
     <div
-      className={`bg-white rounded-xl shadow-[0_1px_5px_0px]  shadow-zinc-300 min-h-72 p-6 row-span-2 flex flex-col gap-8 ${
+      className={`bg-white rounded-xl shadow-[0_1px_5px_0px]  shadow-zinc-300 min-h-72 p-4 sm:p-6 row-span-2 flex flex-col gap-8 ${
         sticky ? "block top-24 h-fit lg:sticky" : ""
       }${side ? " lg:max-w-[410px]" : ""}`}
     >
-      <div className="w-full aspect-video lg:aspect-[1.2] rounded-md bg-zinc-100">
+      <div className="w-full aspect-[1.4] sm:aspect-video lg:aspect-[1.2] rounded-lg bg-zinc-100">
         <div className="w-full relative h-full">
           <Image
             src={"/profilePic-transparent.png"}

@@ -14,5 +14,13 @@
     "webAddress": "https://pikxr.onrender.com",
     "imageUrl": "/pikxr.png",
     "category": "Web Application"
+  },
+  {
+    "name": "Web Dev Stories",
+    "subtitle": "Blog Website",
+    "linkAddress": "/works/web-dev-stories",
+    "webAddress": "https://web-dev-stories.vercel.app",
+    "imageUrl": "/web-dev-stories.png",
+    "category": "Web Application"
   }
 ]

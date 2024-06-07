@@ -15,7 +15,7 @@ const tools = [
 
 export default function MyExpertArea() {
   return (
-    <div className="bg-white flex flex-col gap-2 text-zinc-800 rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-6">
+    <div className="bg-white flex flex-col gap-2 text-zinc-800 rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-4 sm:p-6">
       <GridBlockHeader>My Expert Area</GridBlockHeader>
       <div className="grid flex-1 grid-cols-3 grid-rows-2 gap-3">
         {tools.map((tool) => (

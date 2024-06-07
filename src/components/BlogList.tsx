@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import blogposts from "@/data/articles.json";
 
-
 export type Blogpost = {
   id: number;
   title: string;

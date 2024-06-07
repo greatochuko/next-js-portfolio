@@ -183,7 +183,7 @@ const services = [
 
 export default function ServicesBlock() {
   return (
-    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-6 col-span-2 flex flex-col gap-2">
+    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-4 sm:p-6 col-span-2 flex flex-col gap-2">
       <GridBlockHeader>Services I Offer</GridBlockHeader>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 flex-1">
         {services.map((service) => (
@@ -191,7 +191,7 @@ export default function ServicesBlock() {
             key={service.title}
             className="p-4 rounded-xl bg-blue-50 flex flex-col gap-2 justify-between"
           >
-            <div className="aspect-square sm:aspect-video lg:aspect-square bg-white rounded-lg flex-center">
+            <div className="aspect-[1.2] flex-1 sm:aspect-video lg:aspect-square bg-white rounded-lg flex-center">
               {service.icon}
             </div>
             <p className="text-center font-semibold text-zinc-700">

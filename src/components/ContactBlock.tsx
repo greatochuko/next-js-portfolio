@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ContactBlock() {
   return (
-    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-6 flex flex-col justify-between">
+    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-4 sm:p-6 flex flex-col justify-between">
       <p className="p-4 rounded-lg bg-blue-100 text-blue-900/80 font-semibold text-lg">
         Available for hire 🚀
       </p>

@@ -4,18 +4,17 @@ import GridBlockHeader from "./GridBlockHeader";
 import Image from "next/image";
 import blogposts from "@/data/articles.json";
 
-
 export default async function RecentBlog() {
   const blogpost = blogposts[blogposts.length - 1];
 
   return (
-    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] sm:text-lg shadow-zinc-300 min-h-72 p-6 flex flex-col gap-4">
+    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] sm:text-lg shadow-zinc-300 min-h-72 p-4 sm:p-6 flex flex-col gap-4">
       <GridBlockHeader linkText="All Blogposts" linkAddress="/blog">
         Recent Blog
       </GridBlockHeader>
       <Link
         href={blogpost?.href}
-        className="bg-zinc-100 focus-visible:ring ring-blue-400 aspect-video p-6 pb-0 relative flex-1 group rounded-lg overflow-hidden"
+        className="bg-zinc-100 focus-visible:ring ring-blue-400 aspect-video relative flex-1 group rounded-lg overflow-hidden"
       >
         <Image
           src={blogpost?.imageUrl}
