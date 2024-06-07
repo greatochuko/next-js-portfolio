@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Roboto, Open_Sans } from "next/font/google";
+import { Inter, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     absolute: "Great Ogheneochuko - Full stack developer",
   },
   openGraph: {
-    images: ["https://greatochuko.vercel.app/portfolio.png"],
+    images: ["https://greatochuko.vercel.app/portfolio.jpg"],
     description:
       "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development.",
   },
