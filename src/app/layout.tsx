@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Open_Sans } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
 const openSans = Open_Sans({
   weight: ["600", "300", "400", "500", "700", "800"],
   subsets: ["latin"],
