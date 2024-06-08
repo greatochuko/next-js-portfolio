@@ -28,9 +28,9 @@ export default function MobileNav({
           isOpen ? "" : "-translate-x-[100%]"
         }`}
       >
-        <h1 className="text-2xl font-semibold text-zinc-700">
+        <Link href={"/"} className="text-2xl font-semibold text-zinc-700">
           Great<span className="text-blue-500">Folio</span>
-        </h1>
+        </Link>
 
         <ul className="flex flex-col gap-3">
           {navLinks.map((link: NavLink) => (
