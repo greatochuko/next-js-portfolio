@@ -36,7 +36,7 @@ export default function ProjectDetailPage({
                 ? projects[projectIndex - 1].linkAddress
                 : projects[projects.length - 1].linkAddress
             }
-            className="flex-1 text-center bg-blue-white border-[3px] hover:border-blue-500 active:border-blue-600 active:text-white text-zinc-600 hover:text-white font-semibold text-xl rounded-md p-4 hover:bg-blue-500 active:bg-blue-600 duration-300 focus-visible:ring ring-blue-400"
+            className="flex-1 text-center bg-blue-white border-[3px] hover:border-blue-500 active:border-blue-600 active:text-white text-zinc-600 hover:text-white font-semibold text-xl rounded-md p-3 sm:p-4 hover:bg-blue-500 active:bg-blue-600 duration-300 focus-visible:ring ring-blue-400"
           >
             Previous
           </Link>
@@ -46,7 +46,7 @@ export default function ProjectDetailPage({
                 ? projects[projectIndex + 1].linkAddress
                 : projects[0].linkAddress
             }
-            className="flex-1 text-center bg-blue-white border-[3px] hover:border-blue-500 active:border-blue-600 active:text-white text-zinc-600 hover:text-white font-semibold text-xl rounded-md p-4 hover:bg-blue-500 active:bg-blue-600 duration-300 focus-visible:ring ring-blue-400"
+            className="flex-1 text-center bg-blue-white border-[3px] hover:border-blue-500 active:border-blue-600 active:text-white text-zinc-600 hover:text-white font-semibold text-xl rounded-md p-3 sm:p-4 hover:bg-blue-500 active:bg-blue-600 duration-300 focus-visible:ring ring-blue-400"
           >
             Next
           </Link>
