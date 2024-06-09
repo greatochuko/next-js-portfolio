@@ -10,17 +10,6 @@
     "images":["/shopparel.png","/shopparel-1.png","/shopparel-2.png","/shopparel-3.png","/shopparel-4.png","/shopparel-5.png","/shopparel-6.png","/shopparel-7.png"],
     "category": "Web Application"
     },
-    {
-      "name": "Pikxr",
-      "description": "Social Media Website",
-      "overview":"Shopparel is a comprehensive fashion e-commerce platform designed to provide a seamless shopping experience for users while offering robust administrative capabilities for managing products, orders, and customers. The platform features a user-friendly interface for customers to browse and purchase fashion items, alongside a powerful admin section for efficient store management.",
-      "linkAddress": "/works/pikxr",
-      "githubLink": "https://github.com/greatochuko/pikxr-client",
-      "webAddress": "https://pikxr.onrender.com",
-    "imageUrl": "/pikxr.png",
-    "images":["/pikxr.png","/pikxr.png","/pikxr.png","/pikxr.png","/pikxr.png"],
-    "category": "Web Application"
-  },
   {
     "name": "Web Dev Stories",
     "description": "Blog Website",
