@@ -183,7 +183,7 @@ export default function AboutBlock({
           A Passionate <strong>Full Stack Developer</strong> 🖥️ Fullstack Web
           Developer with 1+ year of experience in JavaScript, React, Next.js,
           MongoDB, Express, Tailwind, and TypeScript. having a ton of
-          Experiences with <strong>4+ projects built</strong>.
+          Experiences with <strong>3+ projects built</strong>.
         </p>
       </div>
 
