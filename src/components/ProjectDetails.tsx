@@ -25,6 +25,7 @@ export default function ProjectDetails({ project }: { project: Project }) {
           </h3>
         </div>
         <Link
+          target="_blank"
           href={project.webAddress}
           className="group flex-center gap-1 text-blue-500 w-fit hover:border-blue-500 border-b border-transparent font-semibold duration-300"
         >
@@ -55,6 +56,7 @@ export default function ProjectDetails({ project }: { project: Project }) {
           </svg>
         </Link>
         <Link
+          target="_blank"
           href={project.githubLink}
           className="group flex-center gap-1 text-blue-500 w-fit hover:border-blue-500 border-b border-transparent font-semibold duration-300"
         >
