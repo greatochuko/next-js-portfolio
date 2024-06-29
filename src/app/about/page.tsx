@@ -5,7 +5,7 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About me",
 };
 
 export default function page() {

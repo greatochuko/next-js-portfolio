@@ -4,7 +4,7 @@ import Paginator from "@/components/Paginator";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "My blog",
 };
 
 export default async function BlogPage() {

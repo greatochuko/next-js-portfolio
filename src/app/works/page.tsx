@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import projects from "@/data/projects.json";
 
 export const metadata: Metadata = {
-  title: "Works",
+  title: "My works",
 };
 
 export type Project = {
@@ -60,7 +60,7 @@ export default function WorksPage() {
                 <p className="text-sm text-zinc-500">{project.category}</p>
               </div>
               <Link
-              target="_blank"
+                target="_blank"
                 href={project.webAddress}
                 className="flex-center group w-full sm:w-fit bg-blue-500 rounded-md text-white p-2 hover:bg-blue-600 duration-300 text-sm whitespace-nowrap"
               >

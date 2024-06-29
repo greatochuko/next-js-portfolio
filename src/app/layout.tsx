@@ -10,13 +10,27 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: {
+    default: "Great Ogheneochuko - Portfolio",
     template: "%s - Great Ogheneochuko",
-    absolute: "Great Ogheneochuko - Full stack developer",
   },
+  description:
+    "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development.",
+  keywords: "Great Ogheneochuko, Portfolio, Projects, Skills, Web Developer",
+  authors: [{ name: "Great Ogheneochuko" }],
   openGraph: {
-    images: ["https://greatochuko.vercel.app/portfolio.jpg"],
+    title: "Great Ogheneochuko - Portfolio",
     description:
       "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development.",
+    type: "website",
+    url: "https://www.yourportfolio.com/",
+    images: ["https://greatochuko.vercel.app/portfolio.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Great Ogheneochuko - Portfolio",
+    description:
+      "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development.",
+    images: ["https://greatochuko.vercel.app/portfolio.jpg"],
   },
 };
 
