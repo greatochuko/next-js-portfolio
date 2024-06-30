@@ -180,10 +180,10 @@ export default function AboutBlock({
       <div className="flex gap-2 flex-col text-zinc-800">
         <h2 className="text-2xl font-semibold">Great Ogheneochuko 👋</h2>
         <p>
-          A Passionate <strong>Full Stack Developer</strong> 🖥️ Fullstack Web
-          Developer with 1+ year of experience in JavaScript, React, Next.js,
-          MongoDB, Express, Tailwind, and TypeScript. having a ton of
-          Experiences with <strong>3+ projects built</strong>.
+          A Passionate <strong>Full Stack Web Developer</strong> 🖥️ with 1+ year
+          of experience in JavaScript, React, Next.js, MongoDB, Express,
+          Tailwind, and TypeScript. having a ton of Experiences with{" "}
+          <strong>3+ projects built</strong>.
         </p>
       </div>
 
