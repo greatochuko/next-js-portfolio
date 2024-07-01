@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development.",
     type: "website",
-    url: "https://www.yourportfolio.com/",
+    url: "https://greatochuko.vercel.app",
     images: ["https://greatochuko.vercel.app/portfolio.jpg"],
   },
   twitter: {
