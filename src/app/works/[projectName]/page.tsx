@@ -23,13 +23,13 @@ export function generateMetadata({
       description: project.description,
       type: "website",
       url: `https://greatochuko.vercel.app${project.linkAddress}`,
-      images: [`https://greatochuko.vercel.app${project.imageUrl}`],
+      images: [`https://greatochuko.vercel.app${project.ogImage}`],
     },
     twitter: {
       card: "summary_large_image",
       title: `${project.name} - Great Ogheneochuko`,
       description: project.description,
-      images: [`https://greatochuko.vercel.app${project.imageUrl}`],
+      images: [`https://greatochuko.vercel.app${project.ogImage}`],
     },
   };
 }
