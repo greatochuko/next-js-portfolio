@@ -23,14 +23,14 @@ export const metadata: Metadata = {
       "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development.",
     type: "website",
     url: "https://greatochuko.vercel.app",
-    images: ["https://greatochuko.vercel.app/portfolio.jpg"],
+    images: ["https://greatochuko.vercel.app/profilePic.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Great Ogheneochuko - Portfolio",
     description:
       "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development.",
-    images: ["https://greatochuko.vercel.app/portfolio.jpg"],
+    images: ["https://greatochuko.vercel.app/profilePic.jpg"],
   },
 };
 
