@@ -1,4 +1,14 @@
-[
+[{
+    "name": "Bloggerzine",
+    "description": "Blog Website",
+    "overview":"Bloggerzine is your go-to blog platform for sharing stories across various topics. Enjoy a user-friendly space where you can effortlessly share and manage your blogging experiences. Whether you're a seasoned writer or new to blogging, connect with like-minded individuals and explore the diverse narratives that shape our world. Join us at Bloggerzine to celebrate the love of blogging in all its forms.",
+    "linkAddress": "/works/bloggerzine",
+    "githubLink": "https://github.com/greatochuko/bloggerzine",
+    "webAddress": "https://bloggerzine.vercel.app",
+    "imageUrl": "/bloggerzine-1.png",
+    "images":["/bloggerzine-1.png","/bloggerzine-2.png","/bloggerzine-3.png","/bloggerzine-4.png","/bloggerzine-5.png","/bloggerzine-6.png","/bloggerzine-7.png","/bloggerzine-8.png","/bloggerzine-9.png","/bloggerzine-10.png","/bloggerzine-11.png","/bloggerzine-12.png","/bloggerzine-13.png","/bloggerzine-14.png","/bloggerzine-15.png","/bloggerzine-16.png","/bloggerzine-17.png","/bloggerzine-18.png","/bloggerzine-19.png","/bloggerzine-20.png","/bloggerzine-21.png","/bloggerzine-22.png","/bloggerzine-23.png","/bloggerzine-24.png","/bloggerzine-25.png"],
+    "category": "Web Application"
+  },
   {
     "name": "Shopparel",
     "description": "Fashion E-commerce Website",
@@ -14,23 +24,12 @@
     {
       "name": "Pikxr",
       "description": "Social Media Website",
-      "overview":"Shopparel is a comprehensive fashion e-commerce platform designed to provide a seamless shopping experience for users while offering robust administrative capabilities for managing products, orders, and customers. The platform features a user-friendly interface for customers to browse and purchase fashion items, alongside a powerful admin section for efficient store management.",
+      "overview":"Pikxr is a social media platform where users can connect, share, and discover their world through the power of visual storytelling. Withfundamental features such as basic user authentication, the ability to post, manage stories, and follow/unfollow users, Pikxr offers astraightforward and engaging social experience.",
       "linkAddress": "/works/pikxr",
       "githubLink": "https://github.com/greatochuko/pikxr-client",
       "webAddress": "https://pikxr.onrender.com",
     "imageUrl": "/pikxr.png",
     "images":["/pikxr.png","/pikxr-1.png","/pikxr-2.png","/pikxr-3.png","/pikxr-4.png","/pikxr-5.png","/pikxr-6.png"],
-    "category": "Web Application"
-  },
-  {
-    "name": "Web Dev Stories",
-    "description": "Blog Website",
-    "overview":"Shopparel is a comprehensive fashion e-commerce platform designed to provide a seamless shopping experience for users while offering robust administrative capabilities for managing products, orders, and customers. The platform features a user-friendly interface for customers to browse and purchase fashion items, alongside a powerful admin section for efficient store management.",
-    "linkAddress": "/works/web-dev-stories",
-    "githubLink": "https://github.com/web-dev-greatochuko/stories",
-    "webAddress": "https://web-dev-stories.vercel.app",
-    "imageUrl": "/web-dev-stories.png",
-    "images":["/web-dev-stories.png","/web-dev-stories.png","/web-dev-stories.png","/web-dev-stories.png","/web-dev-stories.png"],
     "category": "Web Application"
   }
 ]

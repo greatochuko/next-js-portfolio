@@ -4,6 +4,35 @@ import Image from "next/image";
 import Link from "next/link";
 import ProjectGallery from "@/components/ProjectGallery";
 import ProjectDetails from "@/components/ProjectDetails";
+import { Metadata } from "next";
+
+export function generateMetadata({
+  params,
+}: {
+  params: { projectName: string };
+}): Metadata {
+  const projectIndex = projects.findIndex(
+    (p) => p.linkAddress.split("/").at(-1) === params.projectName
+  );
+
+  const project = projects[projectIndex];
+  return {
+    title: project.name,
+    openGraph: {
+      title: `${project.name} - Great Ogheneochuko`,
+      description: project.description,
+      type: "website",
+      url: `https://greatochuko.vercel.app${project.linkAddress}`,
+      images: [project.imageUrl],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.name} - Great Ogheneochuko`,
+      description: project.description,
+      images: [project.imageUrl],
+    },
+  };
+}
 
 export default function ProjectDetailPage({
   params,
