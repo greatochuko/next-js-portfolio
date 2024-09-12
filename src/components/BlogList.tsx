@@ -24,26 +24,26 @@ export default function BlogList() {
   );
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       {filteredBlogposts.map((article) => (
         <Link
           target="_blank"
           href={article.href}
-          className="aspect-[1.2] flex flex-col gap-2 group"
+          className="flex flex-col gap-2 group"
           key={article.id}
         >
-          <div className="relative flex-1 rounded-md overflow-hidden">
+          <div className="relative flex-1 rounded-md overflow-hidden aspect-[1.75]">
             <Image
               src={article.imageUrl}
               fill
               alt={article.title}
-              className="object-cover group-hover:scale-110 duration-300"
+              className="group-hover:scale-110 duration-300 object-cover"
             ></Image>
           </div>
-          <h3 className="text-xl font-semibold text-zinc-700 group-hover:text-blue-500 duration-300">
+          <h3 className="group-hover:text-blue-500 font-semibold text-xl text-zinc-700 duration-300">
             {article.title}
           </h3>
-          <p className="text-zinc-400 text-sm font-semibold">
+          <p className="font-semibold text-sm text-zinc-400">
             {article.readTime} read &#183;{" "}
             {new Date(article.dateUpdated)
               .toDateString()
