@@ -75,6 +75,7 @@ export default function FullscreenImagePreview({
         <div className="top-0 left-0 absolute flex w-fit h-full">
           {images.map((image) => (
             <div
+            key={image}
               className="relative flex-1 h-full duration-300 aspect-[1.5]"
               style={{
                 transform: `translateX(-${
