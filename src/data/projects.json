@@ -1,4 +1,15 @@
 [{
+    "name": "Estate Haven",
+    "description": "Real Estate Website",
+    "overview":"Estate-Haven is your trusted real estate platform designed to simplify the process of finding your dream property. With a user-friendly interface, you can effortlessly browse, list, and manage properties, whether you're buying, selling, or renting. From cozy apartments to luxurious homes, Estate-Haven connects you with the perfect property to suit your needs. Join us at Estate-Haven to make your real estate journey smooth, efficient, and enjoyable.",
+    "linkAddress": "/works/estate-haven",
+    "githubLink": "https://github.com/greatochuko/estate-haven",
+    "webAddress": "https://estatehaven.vercel.app",
+    "imageUrl": "/estate-haven-1.png",
+    "ogImage": "/estate-haven-1.jpg",
+    "images":["/estate-haven-1.png","/estate-haven-2.png","/estate-haven-3.png","/estate-haven-4.png","/estate-haven-5.png","/estate-haven-6.png","/estate-haven-7.png","/estate-haven-8.png","/estate-haven-9.png","/estate-haven-10.png","/estate-haven-11.png","/estate-haven-12.png","/estate-haven-13.png","/estate-haven-14.png","/estate-haven-15.png","/estate-haven-16.png"],
+    "category": "Web Application"
+  },{
     "name": "Bloggerzine",
     "description": "Blog Website",
     "overview":"Bloggerzine is your go-to blog platform for sharing stories across various topics. Enjoy a user-friendly space where you can effortlessly share and manage your blogging experiences. Whether you're a seasoned writer or new to blogging, connect with like-minded individuals and explore the diverse narratives that shape our world. Join us at Bloggerzine to celebrate the love of blogging in all its forms.",
