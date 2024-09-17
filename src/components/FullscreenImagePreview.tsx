@@ -36,12 +36,12 @@ export default function FullscreenImagePreview({
       onClick={() => setCurrentIndex(null)}
     >
       <div
-        className="relative w-[90%] max-w-4xl aspect-[1.5]"
+        className="relative w-[90%] max-w-4xl overflow-hidden aspect-[1.5]"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={() => setCurrentIndex(null)}
-          className="absolute top-0 left-[50%] -translate-x-[50%] -translate-y-[150%] lg:-translate-y-[120%] rounded-full bg-black/40 shadow-md p-4"
+          className="top-0 left-[50%] absolute bg-black/40 shadow-md p-4 rounded-full -translate-x-[50%] -translate-y-[150%] lg:-translate-y-[120%]"
         >
           <svg
             viewBox="0 0 24 24"
@@ -72,17 +72,30 @@ export default function FullscreenImagePreview({
             </g>
           </svg>
         </button>
-        {currentIndex !== null ? (
-          <Image
-            src={images[currentIndex as number]}
-            fill
-            alt=""
-            className="object-contain"
-          ></Image>
-        ) : null}
+        <div className="top-0 left-0 absolute flex w-fit h-full">
+          {images.map((image) => (
+            <div
+              className="relative flex-1 h-full duration-300 aspect-[1.5]"
+              style={{
+                transform: `translateX(-${
+                  currentIndex ? currentIndex * 100 : 0
+                }%)`,
+              }}
+            >
+              <Image
+                src={image}
+                fill
+                alt=""
+                className={`object-contain duration-300 ${
+                  currentIndex === images.indexOf(image) ? "" : "scale-[80%]"
+                }`}
+              ></Image>
+            </div>
+          ))}
+        </div>
         <button
           onClick={showPreviousImage}
-          className="absolute group left-0 top-[50%] rounded-r-lg px-1 py-3 sm:px-3 sm:py-6 hover:bg-black/70 bg-black/50 -translate-y-[50%] duration-300"
+          className="top-[50%] left-0 absolute bg-black/50 hover:bg-black/70 px-1 sm:px-3 py-3 sm:py-6 rounded-r-lg -translate-y-[50%] duration-300 group"
         >
           <svg
             viewBox="0 0 24 24"
@@ -101,7 +114,7 @@ export default function FullscreenImagePreview({
               <path
                 d="M6 12H18M6 12L11 7M6 12L11 17"
                 stroke="#000000"
-                className="stroke-zinc-100 group-hover:stroke-white group-disabled:stroke-zinc-400"
+                className="group-hover:stroke-white group-disabled:stroke-zinc-400 stroke-zinc-100"
                 strokeWidth="4"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -111,7 +124,7 @@ export default function FullscreenImagePreview({
         </button>
         <button
           onClick={showNextImage}
-          className="absolute group right-0 top-[50%] rounded-l-lg px-1 py-3 sm:px-3 sm:py-6 hover:bg-black/70 bg-black/50 -translate-y-[50%] duration-300"
+          className="top-[50%] right-0 absolute bg-black/50 hover:bg-black/70 px-1 sm:px-3 py-3 sm:py-6 rounded-l-lg -translate-y-[50%] duration-300 group"
         >
           <svg
             viewBox="0 0 24 24"
@@ -130,7 +143,7 @@ export default function FullscreenImagePreview({
               <path
                 d="M6 12H18M18 12L13 7M18 12L13 17"
                 stroke="#000000"
-                className="stroke-zinc-100 group-hover:stroke-white group-disabled:stroke-zinc-400"
+                className="group-hover:stroke-white group-disabled:stroke-zinc-400 stroke-zinc-100"
                 strokeWidth="4"
                 strokeLinecap="round"
                 strokeLinejoin="round"
