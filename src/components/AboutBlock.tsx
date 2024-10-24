@@ -9,7 +9,7 @@ const socialLinks = [
     icon: (
       <svg
         fill="#333"
-        className="group-hover:fill-blue-500 duration-300 group-focus-visible:fill-blue-500 "
+        className="group-hover:fill-blue-500 group-focus-visible:fill-blue-500 duration-300"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 512 512"
@@ -41,7 +41,7 @@ const socialLinks = [
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
         fill="#333"
-        className="group-hover:fill-blue-500 duration-300 group-focus-visible:fill-blue-500 "
+        className="group-hover:fill-blue-500 group-focus-visible:fill-blue-500 duration-300"
       >
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
@@ -63,7 +63,7 @@ const socialLinks = [
               id="Dribbble-Light-Preview"
               transform="translate(-140.000000, -7559.000000)"
               fill="#333"
-              className="group-hover:fill-blue-500 duration-300 group-focus-visible:fill-blue-500 "
+              className="group-hover:fill-blue-500 group-focus-visible:fill-blue-500 duration-300"
             >
               <g id="icons" transform="translate(56.000000, 160.000000)">
                 <path
@@ -87,7 +87,7 @@ const socialLinks = [
         width={18}
         version="1.1"
         fill="#333"
-        className="group-hover:fill-blue-500 duration-300 group-focus-visible:fill-blue-500 "
+        className="group-hover:fill-blue-500 group-focus-visible:fill-blue-500 duration-300"
       >
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
@@ -109,7 +109,7 @@ const socialLinks = [
               id="Dribbble-Light-Preview"
               transform="translate(-180.000000, -7479.000000)"
               fill="#333"
-              className="group-hover:fill-blue-500 duration-300 group-focus-visible:fill-blue-500 "
+              className="group-hover:fill-blue-500 group-focus-visible:fill-blue-500 duration-300"
             >
               <g id="icons" transform="translate(56.000000, 160.000000)">
                 <path
@@ -129,7 +129,7 @@ const socialLinks = [
     icon: (
       <svg
         fill="#000000"
-        className="group-hover:fill-blue-500 duration-300 group-focus-visible:fill-blue-500 "
+        className="group-hover:fill-blue-500 group-focus-visible:fill-blue-500 duration-300"
         viewBox="0 0 24 24"
         height={18}
         width={18}
@@ -149,7 +149,7 @@ const socialLinks = [
         </g>
       </svg>
     ),
-    href: "mailto:greatochuko123@gmail.com",
+    href: "mailto:officialgreatochuko@gmail.com",
   },
 ];
 
@@ -166,8 +166,8 @@ export default function AboutBlock({
         sticky ? "block top-24 h-fit lg:sticky" : ""
       }${side ? " lg:max-w-[410px]" : ""}`}
     >
-      <div className="w-full aspect-[1.4] sm:aspect-video lg:aspect-[1.2] rounded-lg bg-zinc-100">
-        <div className="w-full relative h-full">
+      <div className="w-full aspect-[1.4] sm:aspect-video lg:aspect-[1.2] bg-zinc-100 rounded-lg">
+        <div className="relative w-full h-full">
           <Image
             src={"/profilePic-transparent.png"}
             fill
@@ -177,8 +177,8 @@ export default function AboutBlock({
           />
         </div>
       </div>
-      <div className="flex gap-2 flex-col text-zinc-800">
-        <h2 className="text-2xl font-semibold">Great Ogheneochuko 👋</h2>
+      <div className="flex flex-col gap-2 text-zinc-800">
+        <h2 className="font-semibold text-2xl">Great Ogheneochuko 👋</h2>
         <p>
           A Passionate <strong>Full Stack Web Developer</strong> 🖥️ with 1+ year
           of experience in JavaScript, React, Next.js, MongoDB, Express,
@@ -191,7 +191,7 @@ export default function AboutBlock({
         <Link
           href={"/my-resume.pdf"}
           target="_blank"
-          className="focus-visible:ring ring-blue-400 flex-center gap-2 bg-blue-500 flex-1 py-4 text-sm sm:text-base sm:flex-none sm:px-8 lg:px-0 lg:flex-1 rounded-md text-white font-semibold hover:bg-blue-600/95 active:bg-blue-600 duration-300"
+          className="flex-1 flex-center sm:flex-none lg:flex-1 gap-2 bg-blue-500 hover:bg-blue-600/95 active:bg-blue-600 sm:px-8 lg:px-0 py-4 rounded-md focus-visible:ring ring-blue-400 font-semibold text-sm text-white sm:text-base duration-300"
         >
           <svg
             fill="#fff"
@@ -229,7 +229,7 @@ export default function AboutBlock({
             <Link
               href={link.href}
               target="_blank"
-              className="group border-[3px] rounded-md hover:border-blue-500 duration-300 p-2 block focus-visible:border-blue-500"
+              className="block border-[3px] p-2 hover:border-blue-500 focus-visible:border-blue-500 rounded-md duration-300 group"
             >
               {link.icon}
             </Link>
