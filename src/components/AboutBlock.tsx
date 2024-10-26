@@ -29,7 +29,7 @@ const socialLinks = [
         </g>
       </svg>
     ),
-    href: "https://twitter.com/officialochuko",
+    href: "https://twitter.com/greatochuko123",
   },
   {
     name: "github",
@@ -149,7 +149,7 @@ const socialLinks = [
         </g>
       </svg>
     ),
-    href: "mailto:officialgreatochuko@gmail.com",
+    href: "mailto:greatochuko123@gmail.com",
   },
 ];
 
