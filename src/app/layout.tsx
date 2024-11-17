@@ -23,14 +23,14 @@ export const metadata: Metadata = {
       "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development.",
     type: "website",
     url: "https://greatochuko.vercel.app",
-    images: ["https://greatochuko.vercel.app/profilePic.jpg"],
+    images: ["https://greatochuko.vercel.app/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Great Ogheneochuko - Portfolio",
     description:
       "Explore the innovative work and creative journey of Great Ochuko, a passionate Software developer specializing in Web development.",
-    images: ["https://greatochuko.vercel.app/profilePic.jpg"],
+    images: ["https://greatochuko.vercel.app/og-image.jpg"],
   },
 };
 
@@ -49,7 +49,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="flex-1">{children}</main>
-        <footer className="mx-auto w-fit my-6 text-sm font-semibold text-zinc-500">
+        <footer className="mx-auto my-6 w-fit font-semibold text-sm text-zinc-500">
           &copy; {new Date().getFullYear()}, Great Ogheneochuko
         </footer>
       </body>

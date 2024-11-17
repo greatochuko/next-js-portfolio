@@ -166,14 +166,14 @@ export default function AboutBlock({
         sticky ? "block top-24 h-fit lg:sticky" : ""
       }${side ? " lg:max-w-[410px]" : ""}`}
     >
-      <div className="w-full aspect-[1.4] sm:aspect-video lg:aspect-[1.2] bg-zinc-100 rounded-lg">
+      <div className="w-full aspect-[1.4] sm:aspect-video lg:aspect-[1.2] bg-zinc-100 rounded-lg overflow-hidden">
         <div className="relative w-full h-full">
           <Image
-            src={"/profilePic-transparent.png"}
+            src={"/profilePic.png"}
             fill
             sizes="(max-width:900px)"
             alt="Picture of Great"
-            className="object-contain"
+            className="object-cover"
           />
         </div>
       </div>
