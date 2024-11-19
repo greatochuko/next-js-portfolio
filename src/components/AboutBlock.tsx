@@ -162,80 +162,87 @@ export default function AboutBlock({
 }) {
   return (
     <div
-      className={`bg-white rounded-xl shadow-[0_1px_5px_0px]  shadow-zinc-300 min-h-72 p-4 sm:p-6 row-span-2 flex flex-col gap-8 ${
+      className={`bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-4 sm:p-6 row-span-2 flex md:flex-row flex-col lg:flex-col gap-6 md:gap-8 ${
         sticky ? "block top-24 h-fit lg:sticky" : ""
       }${side ? " lg:max-w-[410px]" : ""}`}
     >
-      <div className="w-full aspect-[1.4] sm:aspect-video lg:aspect-[1.2] bg-zinc-100 rounded-lg overflow-hidden">
+      <div className="flex-1 bg-zinc-100 rounded-lg w-full md:max-w-72 lg:max-w-full overflow-hidden aspect-[1.3] md:aspect-square">
         <div className="relative w-full h-full">
           <Image
             src={"/profilePic.png"}
             fill
             sizes="(max-width:900px)"
-            alt="Picture of Great"
+            alt="Great Ogheneochuko"
             className="object-cover"
           />
         </div>
       </div>
-      <div className="flex flex-col gap-2 text-zinc-800">
-        <h2 className="font-semibold text-2xl">Great Ogheneochuko 👋</h2>
-        <p>
-          A Passionate <strong>Full Stack Web Developer</strong> 🖥️ with 1+ year
-          of experience in JavaScript, React, Next.js, MongoDB, Express,
-          Tailwind, and TypeScript. having a ton of Experiences with{" "}
-          <strong>3+ projects built</strong>.
-        </p>
-      </div>
 
-      <div className="flex gap-2">
-        <Link
-          href={"/my-resume.pdf"}
-          target="_blank"
-          className="flex-1 flex-center sm:flex-none lg:flex-1 gap-2 bg-blue-500 hover:bg-blue-600/95 active:bg-blue-600 sm:px-8 lg:px-0 py-4 rounded-md focus-visible:ring ring-blue-400 font-semibold text-sm text-white sm:text-base duration-300"
-        >
-          <svg
-            fill="#fff"
-            viewBox="0 0 846.66 846.66"
-            height={20}
-            width={20}
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
+      <div className="flex flex-col flex-1 gap-6 md:gap-8">
+        <div className="flex flex-col gap-2 text-zinc-800">
+          <h2 className="font-semibold text-2xl">Great Ogheneochuko 👋</h2>
+          <p className="text-base leading-7">
+            Innovative <strong>Full-stack</strong> developer specializing in
+            responsive, scalable web apps using the React, Express.js,
+            TypeScript, and Next.js. Experienced in building user-friendly
+            interfaces, creating robust APIs, and managing databases with
+            MongoDB and Supabase.
+          </p>
+        </div>
+
+        <div className="flex gap-2">
+          <Link
+            href={
+              "https://docs.google.com/viewer?url=https://greatochuko.vercel.app/my-resume.pdf"
+            }
+            target="_blank"
+            className="flex-1 flex-center gap-2 bg-blue-500 hover:bg-blue-600/95 active:bg-blue-600 py-3 md:py-4 rounded-md focus-visible:ring ring-blue-400 font-semibold text-sm text-white sm:text-base duration-300"
           >
-            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <defs>
-                <style type="text/css"> .fil0 </style>
-              </defs>
-              <g id="Layer_x0020_1">
-                <path
-                  className="fil0"
-                  d="M94.63 9.1l483.79 0c4.99,0.04 9.19,1.59 12.96,4.56l171.53 121.21c5.9,3.65 9.84,10.18 9.84,17.63l0 664.35c0,11.44 -9.28,20.71 -20.71,20.71l-657.41 0c-11.44,0 -20.72,-9.27 -20.72,-20.71l0 -787.04c0,-11.44 9.28,-20.71 20.72,-20.71zm137.12 519.85c-27.24,0 -27.24,-41.42 0,-41.42l383.16 0c27.25,0 27.25,41.42 0,41.42l-383.16 0zm0 205.05c-27.24,0 -27.24,-41.42 0,-41.42l383.16 0c27.25,0 27.25,41.42 0,41.42l-383.16 0zm0 -102.52c-27.24,0 -27.24,-41.43 0,-41.43l383.16 0c27.25,0 27.25,41.43 0,41.43l-383.16 0zm131.55 -328.81c30.97,23.15 49.31,59.43 49.31,98.21 0,11.44 -9.27,20.71 -20.71,20.71l-203.63 0c-11.44,0 -20.72,-9.27 -20.72,-20.71 0,-38.78 18.35,-75.06 49.31,-98.21 -10.99,-15.01 -17.49,-33.53 -17.49,-53.56 0,-50.09 40.62,-90.71 90.71,-90.71 50.1,0 90.71,40.62 90.71,90.71 0,20.03 -6.49,38.55 -17.49,53.56zm-113.46 27.76c-18.9,10.8 -32.7,28.69 -38.21,49.74l156.91 0c-5.51,-21.05 -19.31,-38.94 -38.22,-49.74 -12.12,6.01 -25.79,9.39 -40.24,9.39 -14.45,0 -28.11,-3.38 -40.24,-9.39zm40.24 -130.6c-27.22,0 -49.28,22.06 -49.28,49.28 0,27.23 22.06,49.29 49.28,49.29 27.22,0 49.29,-22.06 49.29,-49.29 0,-27.22 -22.06,-49.28 -49.29,-49.28zm441.25 -26.62l-152.91 0c-11.43,0 -20.71,-9.28 -20.71,-20.71l0 -101.98 -442.37 0 0 745.62 615.99 0 0 -622.93zm-132.2 -103.45l0 62.03 87.78 0 -87.78 -62.03z"
-                ></path>
-              </g>
-            </g>
-          </svg>
-          View Resume
-        </Link>
-        <CopyEmailButton />
-      </div>
-      <ul className="flex gap-3">
-        {socialLinks.map((link) => (
-          <li key={link.name}>
-            <Link
-              href={link.href}
-              target="_blank"
-              className="block border-[3px] p-2 hover:border-blue-500 focus-visible:border-blue-500 rounded-md duration-300 group"
+            <svg
+              fill="#fff"
+              viewBox="0 0 846.66 846.66"
+              height={20}
+              width={20}
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              {link.icon}
-            </Link>
-          </li>
-        ))}
-      </ul>
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <defs>
+                  <style type="text/css"> .fil0 </style>
+                </defs>
+                <g id="Layer_x0020_1">
+                  <path
+                    className="fil0"
+                    d="M94.63 9.1l483.79 0c4.99,0.04 9.19,1.59 12.96,4.56l171.53 121.21c5.9,3.65 9.84,10.18 9.84,17.63l0 664.35c0,11.44 -9.28,20.71 -20.71,20.71l-657.41 0c-11.44,0 -20.72,-9.27 -20.72,-20.71l0 -787.04c0,-11.44 9.28,-20.71 20.72,-20.71zm137.12 519.85c-27.24,0 -27.24,-41.42 0,-41.42l383.16 0c27.25,0 27.25,41.42 0,41.42l-383.16 0zm0 205.05c-27.24,0 -27.24,-41.42 0,-41.42l383.16 0c27.25,0 27.25,41.42 0,41.42l-383.16 0zm0 -102.52c-27.24,0 -27.24,-41.43 0,-41.43l383.16 0c27.25,0 27.25,41.43 0,41.43l-383.16 0zm131.55 -328.81c30.97,23.15 49.31,59.43 49.31,98.21 0,11.44 -9.27,20.71 -20.71,20.71l-203.63 0c-11.44,0 -20.72,-9.27 -20.72,-20.71 0,-38.78 18.35,-75.06 49.31,-98.21 -10.99,-15.01 -17.49,-33.53 -17.49,-53.56 0,-50.09 40.62,-90.71 90.71,-90.71 50.1,0 90.71,40.62 90.71,90.71 0,20.03 -6.49,38.55 -17.49,53.56zm-113.46 27.76c-18.9,10.8 -32.7,28.69 -38.21,49.74l156.91 0c-5.51,-21.05 -19.31,-38.94 -38.22,-49.74 -12.12,6.01 -25.79,9.39 -40.24,9.39 -14.45,0 -28.11,-3.38 -40.24,-9.39zm40.24 -130.6c-27.22,0 -49.28,22.06 -49.28,49.28 0,27.23 22.06,49.29 49.28,49.29 27.22,0 49.29,-22.06 49.29,-49.29 0,-27.22 -22.06,-49.28 -49.29,-49.28zm441.25 -26.62l-152.91 0c-11.43,0 -20.71,-9.28 -20.71,-20.71l0 -101.98 -442.37 0 0 745.62 615.99 0 0 -622.93zm-132.2 -103.45l0 62.03 87.78 0 -87.78 -62.03z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            View Resume
+          </Link>
+          <CopyEmailButton />
+        </div>
+
+        <ul className="flex gap-3">
+          {socialLinks.map((link) => (
+            <li key={link.name}>
+              <Link
+                href={link.href}
+                target="_blank"
+                className="block border-[3px] p-2 hover:border-blue-500 focus-visible:border-blue-500 rounded-md duration-300 group"
+              >
+                {link.icon}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
