@@ -20,7 +20,7 @@ export default function CopyEmailButton() {
       </ToastNotification>
       <button
         onClick={copyEmail}
-        className={`focus-visible:ring bg-white ring-blue-400 flex-center gap-2 flex-1 py-3 md:py-4 text-sm sm:text-base rounded-md border font-semibold text-zinc-800 border-zinc-200 hover:bg-zinc-200 active:bg-zinc-300 hover:border-zinc-300 duration-300 ${
+        className={`focus-visible:ring bg-white ring-blue-400 flex-center gap-2 flex-1 py-2 md:py-3 text-sm rounded-md border font-semibold text-zinc-800 border-zinc-200 hover:bg-zinc-100 active:bg-zinc-200 hover:border-zinc-200 duration-300 sm:text-base ${
           isCopied ? "border-green-600" : ""
         }`}
       >

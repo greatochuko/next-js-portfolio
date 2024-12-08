@@ -183,7 +183,7 @@ const services = [
 
 export default function ServicesBlock() {
   return (
-    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-4 sm:p-6 col-span-2 flex flex-col gap-2">
+    <div className="bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-4 sm:p-6 col-span-2 flex flex-col gap-4">
       <GridBlockHeader>Services I Offer</GridBlockHeader>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 flex-1">
         {services.map((service) => (

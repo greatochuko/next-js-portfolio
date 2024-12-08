@@ -162,26 +162,26 @@ export default function AboutBlock({
 }) {
   return (
     <div
-      className={`bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-4 sm:p-6 row-span-2 flex md:flex-row flex-col lg:flex-col gap-6 md:gap-8 ${
+      className={`bg-white rounded-xl shadow-[0_1px_5px_0px] shadow-zinc-300 min-h-72 p-4 sm:p-6 row-span-2 flex md:flex-row flex-col lg:flex-col gap-4 md:gap-6 ${
         sticky ? "block top-24 h-fit lg:sticky" : ""
       }${side ? " lg:max-w-[410px]" : ""}`}
     >
-      <div className="flex-1 bg-zinc-100 rounded-lg w-full md:max-w-72 lg:max-w-full overflow-hidden aspect-[1.1] sm:aspect-square">
-        <div className="relative w-full h-full ">
-          <Image
-            src={"/profilePic.png"}
-            fill
-            sizes="(max-width:900px)"
-            alt="Great Ogheneochuko"
-            className="object-cover object-top w-full h-full"
-          />
-        </div>
+      <div className="flex-1 bg-zinc-100 rounded-lg relative aspect-[1.1] md:max-w-[370px] lg:max-w-none sm:aspect-[1.2] md:aspect-auto lg:aspect-[1.1] ">
+        <Image
+          src={"/profilePic.png"}
+          fill
+          sizes="(max-width:900px)"
+          alt="Great Ogheneochuko"
+          className="object-cover object-top w-full h-full"
+        />
       </div>
 
       <div className="flex flex-col flex-1 gap-6 md:gap-8">
         <div className="flex flex-col gap-2 text-zinc-800">
-          <h2 className="font-semibold text-2xl">Great Ogheneochuko 👋</h2>
-          <p className="text-base leading-7">
+          <h2 className="font-semibold text-2xl whitespace-nowrap">
+            Great Ogheneochuko 👋
+          </h2>
+          <p className="">
             Innovative <strong>Full-stack</strong> developer specializing in
             responsive, scalable web apps using the React, Express.js,
             TypeScript, and Next.js. Experienced in building user-friendly
@@ -190,13 +190,13 @@ export default function AboutBlock({
           </p>
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex gap-2 mt-auto sm:flex-col md:flex-row">
           <Link
             href={
               "https://docs.google.com/viewer?url=https://greatochuko.vercel.app/my-resume.pdf"
             }
             target="_blank"
-            className="flex-1 flex-center gap-2 bg-blue-500 hover:bg-blue-600/95 active:bg-blue-600 py-3 md:py-4 rounded-md focus-visible:ring ring-blue-400 font-semibold text-sm text-white sm:text-base duration-300"
+            className="flex-1 flex-center gap-2 bg-blue-500 hover:bg-blue-600/95 active:bg-blue-600 py-3 md:py-4 rounded-md focus-visible:ring ring-blue-400 font-semibold text-sm sm:text-base text-white duration-300"
           >
             <svg
               fill="#fff"

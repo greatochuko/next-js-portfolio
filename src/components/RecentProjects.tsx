@@ -15,9 +15,9 @@ export default async function RecentProjects() {
         <Link
           key={project.name}
           href={project.linkAddress}
-          className="rounded-md bg-zinc-100 focus-visible:ring ring-blue-400 p-2 group"
+          className="rounded-md bg-zinc-100 focus-visible:ring ring-blue-400 p-2 group  aspect-video lg:aspect-auto flex-1"
         >
-          <div className="overflow-hidden rounded-md relative aspect-video">
+          <div className="overflow-hidden rounded-md relative w-full h-full">
             <Image
               src={project.imageUrl}
               alt={project.name}
