@@ -166,14 +166,14 @@ export default function AboutBlock({
         sticky ? "block top-24 h-fit lg:sticky" : ""
       }${side ? " lg:max-w-[410px]" : ""}`}
     >
-      <div className="flex-1 bg-zinc-100 rounded-lg w-full md:max-w-72 lg:max-w-full overflow-hidden aspect-[1.3] md:aspect-square">
-        <div className="relative w-full h-full">
+      <div className="flex-1 bg-zinc-100 rounded-lg w-full md:max-w-72 lg:max-w-full overflow-hidden aspect-[1.1] sm:aspect-square">
+        <div className="relative w-full h-full ">
           <Image
             src={"/profilePic.png"}
             fill
             sizes="(max-width:900px)"
             alt="Great Ogheneochuko"
-            className="object-cover"
+            className="object-cover object-top w-full h-full"
           />
         </div>
       </div>
