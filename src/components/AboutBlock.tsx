@@ -193,7 +193,7 @@ export default function AboutBlock({
         <div className="flex gap-2 mt-auto sm:flex-col md:flex-row">
           <Link
             href={
-              "https://docs.google.com/viewer?url=https://greatochuko.vercel.app/my-resume.pdf"
+              "/my-resume.pdf"
             }
             target="_blank"
             className="flex-1 flex-center gap-2 bg-blue-500 hover:bg-blue-600/95 active:bg-blue-600 py-3 md:py-4 rounded-md focus-visible:ring ring-blue-400 font-semibold text-sm sm:text-base text-white duration-300"
